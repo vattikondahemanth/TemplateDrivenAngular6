@@ -1,0 +1,17 @@
+Template drives
+<form #form1="ngForm" (ngSubmit)="onsubmit(form1)">
+
+    <div ngModelGroup="address" #addressCtrl="ngModelGroup">
+        <input name="first" [ngModel]="address.first" minlength="2">
+        <input name="last" [ngModel]="address.last" required>
+        
+    </div>
+    <input type="text" name="email" [(ngModel)]="name" required #input1="ngModel">
+    {{input1.errors | json}}
+
+    <input type="text" name="password" [(ngModel)]="name"required  #input2="ngModel">
+    {{input2.errors | json}}
+    <input type="button" value="Thsibtn" (click)="currentData(input1)">
+    <input type="submit" value="Thsibtn" (click)="currentData(input1)">
+</form>
+
