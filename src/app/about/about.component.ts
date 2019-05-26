@@ -14,8 +14,6 @@ export class AboutComponent implements OnInit {
   @ViewChild('input1') input1: any;
   @ViewChild('form1') form1: any;
   @ViewChild('addressCtrl') addressCtrl: any;
-
-  
   constructor() { }
 
   ngOnInit() {

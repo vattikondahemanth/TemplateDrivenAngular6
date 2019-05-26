@@ -8,7 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ContactComponent implements OnInit {
   name = 'MaNoj GUUPPP aaaaaa';
-  name2 = "";
+  name2 = '';
   salary = 12450000.1458652;
   constructor(private route: ActivatedRoute, private router: Router,
   ) { }

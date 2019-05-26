@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  condition = true;
+  xyz = 'sdjasdkjasjdjasgjd';
+  arry = ['manoj', 'kapil', 'shram']
   constructor() { }
 
   ngOnInit() {
+
+  }
+  myMethod(item) {
+    console.log(item);
   }
 
 }

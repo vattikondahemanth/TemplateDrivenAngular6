@@ -7,7 +7,12 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NotfoundComponent } from './notfound/notfound.component';
-import {ExponentialStrengthPipe  } from "./power.pipe";
+import { ExponentialStrengthPipe } from "./power.pipe";
+import { UnlessDirective } from './unlessdirective';
+import { TableComponent } from "./tablecomponent/table.component";
+import { HttpClientModule } from "@angular/common/http";
+import { HeaderComponent } from './header.component';
+
 const myroutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
@@ -18,17 +23,21 @@ const myroutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
+    UnlessDirective,
     HomeComponent,
     ContactComponent,
     AboutComponent,
     ExponentialStrengthPipe,
-    NotfoundComponent
+    NotfoundComponent,
+    TableComponent,
+    HeaderComponent 
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(myroutes)
+    RouterModule.forRoot(myroutes),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
